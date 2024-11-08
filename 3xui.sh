@@ -23,6 +23,7 @@ else
 fi
 echo "The OS release is: $release"
 
+# 定义 arch 函数
 arch() {
     case "$(uname -m)" in
     x86_64 | x64 | amd64) echo 'amd64' ;;
@@ -57,6 +58,7 @@ case "$release" in
         ;;
 esac
 
+# 定义 install_base 函数
 install_base() {
     case "$release" in
     alpine)
@@ -69,12 +71,14 @@ install_base() {
     esac
 }
 
+# 定义 gen_random_string 函数
 gen_random_string() {
     local length="$1"
     local random_string=$(tr -dc 'a-zA-Z0-9' < /dev/urandom | head -c "$length")
     echo "$random_string"
 }
 
+# 定义 config_after_install 函数
 config_after_install() {
     local existing_username=$(/usr/local/x-ui/x-ui setting -show true | grep -Eo 'username: .+' | awk '{print $2}')
     local existing_password=$(/usr/local/x-ui/x-ui setting -show true | grep -Eo 'password: .+' | awk '{print $2}')
@@ -85,6 +89,7 @@ config_after_install() {
     # 配置逻辑和原代码保持一致，省略详细代码
 }
 
+# 定义 install_x-ui 函数
 install_x-ui() {
     cd /usr/local/
 
