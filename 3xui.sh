@@ -66,7 +66,7 @@ install_x-ui() {
     cd /usr/local/
 
     # 获取最新版本，加入 ghproxy 镜像支持，避免 API 请求次数限制
-    tag_version=$(curl -Ls "https://ghproxy.com/https://api.github.com/repos/MHSanaei/3x-ui/releases/latest" | grep '"tag_name":' | sed -E 's/.*"([^"]+)".*/\1/')
+    tag_version=$(curl -Ls "https://ghp.ci/https://api.github.com/repos/MHSanaei/3x-ui/releases/latest" | grep '"tag_name":' | sed -E 's/.*"([^"]+)".*/\1/')
     
     # 如果获取版本失败，则使用指定版本
     if [ -z "$tag_version" ]; then
@@ -75,7 +75,7 @@ install_x-ui() {
     fi
 
     echo -e "Installing x-ui version: ${tag_version}"
-    wget -O /usr/local/x-ui-linux-$(arch).tar.gz https://ghproxy.com/https://github.com/MHSanaei/3x-ui/releases/download/${tag_version}/x-ui-linux-$(arch).tar.gz
+    wget -O /usr/local/x-ui-linux-$(arch).tar.gz https://ghp.ci/https://github.com/MHSanaei/3x-ui/releases/download/${tag_version}/x-ui-linux-$(arch).tar.gz
     if [ $? -ne 0 ]; then
         echo -e "${red}Failed to download x-ui. Please check your network connection.${plain}"
         exit 1
