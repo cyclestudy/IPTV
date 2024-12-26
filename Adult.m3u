@@ -1,5 +1,5 @@
 #EXTM3U
-#EXTINF:-1 tvg-id="" tvg-name="test" tvg-language="English" " group-title="成人频道",test
+#EXTINF:0,随机直播-点我切换
 https://okx.re/nudelive.php
 #EXTINF:0 tvg-id="" tvg-name="Asian" tvg-language="English" " group-title="成人频道",Asian
 https://o.okxre.filegear-sg.me/okx/https/cdn.adultiptv.net/asian.m3u8
