@@ -1,7 +1,7 @@
 #EXTM3U
 #EXTINF:-1 tvg-id="" tvg-name="Asian" tvg-language="English" " group-title="成人频道",Asian
 https://o.okxre.filegear-sg.me/okx/https/cdn.adultiptv.net/asian.m3u8
-#EXTINF:-1 tvg-id="" tvg-name="test" tvg-language="English" " group-title="成人频道",Asian
+#EXTINF:0 tvg-id="" tvg-name="test" tvg-language="English" " group-title="成人频道1",test
 https://okx.re/nudelive.php?.m3u8
 #EXTINF:0,MyCamTV Teen Girls     
 https://o.okxre.filegear-sg.me/okx/https/live.mycamtv.com/teen.m3u8
