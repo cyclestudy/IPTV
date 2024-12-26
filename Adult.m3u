@@ -1,6 +1,8 @@
 #EXTM3U
 #EXTINF:0,此为随机直播、点我可切换哦！
 https://okx.re/nudelive.php
+#EXTINF:0,RougeTV
+https://o.okxre.filegear-sg.me/okx/https/event.vedge.infomaniak.com/livecast/event.stream/playlist.m3u8
 #EXTINF:0 tvg-id="" tvg-name="Asian" tvg-language="English" " group-title="成人频道",Asian
 https://o.okxre.filegear-sg.me/okx/https/cdn.adultiptv.net/asian.m3u8
 #EXTINF:0,MyCamTV Teen Girls     
